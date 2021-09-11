@@ -17,6 +17,10 @@ html,body{
     padding: 0 2%;
 }
 
+.clear{
+    clear: both;
+}
+
 /* header */
 
 .flex-header{
@@ -240,6 +244,95 @@ html,body{
 /*********/
 
 
+/* servicos e depoimentos */
+
+.flex-servicos-depoimentos{
+    display: flex;
+}
+
+.flex-servicos-depoimentos .servicos{
+    width: 50%;
+    background-color: #242424;
+    padding:70px 2% 120px 2%;
+}
+
+.flex-servicos-depoimentos .servicos .conteudo{
+    
+    color: white;
+    position: relative;
+    padding-left: 25%;
+
+}
+
+.flex-servicos-depoimentos .servicos .conteudo h2{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.flex-servicos-depoimentos .servicos .conteudo ul li{
+    list-style-position: inside;
+    line-height: 25px;
+}
+
+.flex-servicos-depoimentos .servicos .saiba-mais a{
+    margin-top: 8px;
+    background-color: #EB2D2D;
+    color: white;
+    text-decoration: none;
+    padding: 8px 50px;
+    display: inline-block;
+    border-bottom: 5px solid #a32323;
+    margin-top: 8px;
+}
+
+.flex-servicos-depoimentos .servicos .saiba-mais a:hover{
+    background-color: #d12a2a;
+    border-bottom: 5px solid #8b1e1e;
+}
+
+.flex-servicos-depoimentos .depoimentos{
+    width: 50%;
+    background-color: #EB2D2D;
+}
+
+.flex-servicos-depoimentos .depoimentos .conteudo{
+    padding: 70px 25% 80px 25%;
+    color: white;
+}
+
+.depoimentos .conteudo h2{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 32px;
+    padding-bottom: 25px;
+}
+
+.depoimentos .conteudo p{
+    font-size: 20px;
+}
+
+.depoimentos .conteudo .arrow{
+    padding: 20px 0;
+}
+
+.arrow .arrow1{
+    float: left;
+    padding: 0 30px;
+}
+
+
+.depoimentos .conteudo .nome{
+    color: rgb(19, 20, 20);
+    font-size: 22px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+/*********/
+
+
 /* media queries */
 
 @media screen and (max-width:768px){
@@ -264,6 +357,36 @@ html,body{
         width: 65%;
         text-align: center;
         padding-bottom: 30px;
+    }
+
+    .flex-servicos-depoimentos{
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .flex-servicos-depoimentos .servicos{
+        width: 100%;
+        background-color: #242424;
+        padding:50px 2% 80px 2%;
+    }
+
+    .flex-servicos-depoimentos .depoimentos{
+        width: 100%;
+        background-color: #EB2D2D;
+    }
+
+    .flex-servicos-depoimentos .depoimentos .conteudo{
+        padding: 50px 2% 50px 2%;
+    }
+
+    .depoimentos .conteudo .nome{
+        float: right;
+        position: relative;
+        top: -80px;
+    }
+
+    .flex-servicos-depoimentos .servicos .conteudo{
+       padding-left: 20%;
     }
 }
 
@@ -306,6 +429,7 @@ html,body{
     .flex-veiculos-destaque .conteudo{
         width: 90%;
     }
+    
 }
 
 @media screen and (max-width:460px){
