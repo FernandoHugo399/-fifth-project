@@ -44,6 +44,41 @@ html,body{
     font-size: 23px;
 }
 
+.flex-header .menu-mobile{
+    display: none;
+    width: 32px;
+    background-image: url(../imagens/icon_menu.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.flex-header .menu-mobile ul{
+    display: none;
+    position: absolute;
+    top: 125px;
+    left: 0;
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 5px solid #EB2D2D;
+
+}
+
+.flex-header .menu-mobile ul li{
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+.flex-header .menu-mobile ul li a{
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 23px;
+}
+
 /*********/
 
 
@@ -114,11 +149,56 @@ html,body{
 /*********/
 
 
+/* veiculos-destaque */
+
+.veiculos-destaque{
+    padding: 70px 0;
+}
+
+.veiculos-destaque .center{
+    text-align: center;
+    max-width: 1368px;
+    margin: 0 auto;
+}
+
+.flex-veiculos-destaque{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.veiculos-destaque .linha{
+    border-bottom: 2px solid black;
+    max-width: 800px;
+    width: 100%;
+
+}
+
+.veiculos-destaque .titulo{
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    width: 300px;
+    
+    
+}
+
+/*********/
+
+
 /* media queries */
 
 @media screen and (max-width:768px){
     .flex-header .menu-desktop{
         display: none;
+    }
+
+    .flex-header .menu-mobile{
+        display: block;
     }
 
     .banner{
