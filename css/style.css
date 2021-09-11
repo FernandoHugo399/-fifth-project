@@ -108,6 +108,97 @@ html,body{
     margin: 20px 0;
     position: relative;
     top: 100px;
-    left: 60px;}
+    left: 60px;
+}
+
+/*********/
+
+
+/* media queries */
+
+@media screen and (max-width:768px){
+    .flex-header .menu-desktop{
+        display: none;
+    }
+
+    .banner{
+        background-size: cover;
+        background-position: left;
+    }
+}
+
+@media screen and (max-width:580px){
+    .banner .chamada-red{
+        padding: 15px 40px;
+        font-size: 20px;
+        margin: 15px 0;;
+    }
+    .banner .chamada-red:nth-of-type(1){
+        width: 250px;
+        position: relative;
+        top: 60px;
+        left: 50px;
+    }
+    
+    .banner .chamada-red:nth-of-type(2){
+        width: 180px;
+        position: relative;
+        top: 60px;
+        left: 40px;
+    }
+    
+    .banner .chamada-red:nth-of-type(3){
+        width: 140px;
+        position: relative;
+        top: 60px;
+        left: 30px;
+    }
+    
+    .banner .chamada-white{
+        width: 270px;
+        padding: 15px 40px;
+        font-size: 20px;
+        margin: 15px 0;
+        top: 60px;
+        left: 20px;
+    }
+}
+
+@media screen and (max-width:460px){
+    .banner .chamada-red{
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 15px 0;;
+    }
+    .banner .chamada-red:nth-of-type(1){
+        width: 220px;
+        position: relative;
+        top: 60px;
+        left: 50px;
+    }
+    
+    .banner .chamada-red:nth-of-type(2){
+        width: 130px;
+        position: relative;
+        top: 60px;
+        left: 40px;
+    }
+    
+    .banner .chamada-red:nth-of-type(3){
+        width: 100px;
+        position: relative;
+        top: 60px;
+        left: 30px;
+    }
+    
+    .banner .chamada-white{
+        width: 220px;
+        padding: 10px 20px;
+        font-size: 20px;
+        margin: 15px 0;
+        top: 60px;
+        left: 20px;
+    }
+}
 
 /*********/
