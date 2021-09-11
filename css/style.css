@@ -12,14 +12,15 @@ html,body{
 }
 
 .center{
-    max-width: 1368px;
+    max-width: 1500px;
     margin: 0 auto;
+    padding: 0 2%;
 }
 
 /* header */
 
 .flex-header{
-    padding: 20px 2%;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
 }   
@@ -42,6 +43,11 @@ html,body{
     font-style: italic;
     color: black;
     font-size: 23px;
+
+}
+
+.flex-header .menu-desktop ul li a:hover{
+    text-decoration: underline;
 }
 
 .flex-header .menu-mobile{
@@ -152,7 +158,7 @@ html,body{
 /* veiculos-destaque */
 
 .veiculos-destaque{
-    padding: 70px 0;
+    padding: 60px 0 80px 0;
 }
 
 .veiculos-destaque .center{
@@ -161,15 +167,15 @@ html,body{
     margin: 0 auto;
 }
 
-.flex-veiculos-destaque{
+.flex-titulo-destaque{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 60px;
 
 }
 .veiculos-destaque .linha{
     border-bottom: 2px solid black;
-    max-width: 800px;
     width: 100%;
 
 }
@@ -183,9 +189,53 @@ html,body{
     position: relative;
     top: 20px;
     width: 300px;
-    
+}
+
+.flex-veiculos-destaque{
+    display: flex;
+}
+.flex-veiculos-destaque .conteudo{
+    width: 33.3%;
+    text-align: left;
+    font-style: italic;
+}
+
+.flex-veiculos-destaque .veiculo{
+    width: 100%;
+    padding-top: 66%;
+    background-color: #ccc;
+    border: 5px solid white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     
 }
+
+.flex-veiculos-destaque .descricao h2{
+    font-size: 19px;
+    padding-top: 3px;
+}
+
+.flex-veiculos-destaque .descricao p{
+    font-size: 14px;
+    color: #555;
+    padding-top: 5px;
+}
+
+.flex-veiculos-destaque .descricao a{
+    margin-top: 8px;
+    background-color: #EB2D2D;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    display: inline-block;
+    border-bottom: 5px solid #a32323;
+}
+
+.flex-veiculos-destaque .descricao a:hover{
+    background-color: #d12a2a;
+    border-bottom: 5px solid #8b1e1e;
+}
+
 
 /*********/
 
@@ -204,6 +254,16 @@ html,body{
     .banner{
         background-size: cover;
         background-position: left;
+    }
+
+    .flex-veiculos-destaque{
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex-veiculos-destaque .conteudo{
+        width: 65%;
+        text-align: center;
+        padding-bottom: 30px;
     }
 }
 
@@ -241,6 +301,10 @@ html,body{
         margin: 15px 0;
         top: 60px;
         left: 20px;
+    }
+
+    .flex-veiculos-destaque .conteudo{
+        width: 90%;
     }
 }
 
