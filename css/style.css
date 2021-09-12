@@ -251,16 +251,17 @@ html,body{
 }
 
 .flex-servicos-depoimentos .servicos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
     background-color: #242424;
-    padding:70px 2% 120px 2%;
+    padding:70px 0 120px 0;
 }
 
 .flex-servicos-depoimentos .servicos .conteudo{
-    
     color: white;
     position: relative;
-    padding-left: 25%;
 
 }
 
@@ -503,7 +504,7 @@ footer .center{
     .flex-servicos-depoimentos .servicos{
         width: 100%;
         background-color: #242424;
-        padding:50px 2% 80px 2%;
+        padding:50px 0 80px 0;
     }
 
     .flex-servicos-depoimentos .depoimentos{
@@ -512,17 +513,13 @@ footer .center{
     }
 
     .flex-servicos-depoimentos .depoimentos .conteudo{
-        padding: 50px 2% 50px 2%;
+        padding: 50px  50px ;
     }
 
     .depoimentos .conteudo .nome{
         float: right;
         position: relative;
         top: -80px;
-    }
-
-    .flex-servicos-depoimentos .servicos .conteudo{
-       padding-left: 20%;
     }
 
     .formulario-contato .flex-w50{
