@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="author" content="Hugo Fernando">
+    <meta name="description" content="Descrição do meu site">
+    <meta name="keywords" content="css, html, js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/veiculo-teste.css">
+    <title>Fifth Project</title>
+</head>
+<body>
+
+    <header>
+        <div class="center">
+            <div class="flex-header">
+
+                <div class="logo"><img src="../imagens/logo.jpg" alt="logo"></div><!-- logo -->
+
+                <nav class="menu-desktop">
+                    <ul>
+                        <li><a style="color:#EB2D2D;" href="index.html">Home</a></li>
+                        <li><a href="venda.html">Venda</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav> <!-- menu-desktop -->
+
+                <nav class="menu-mobile">
+                    <ul>
+                        <li><a style="color:#EB2D2D;" href="index.html">Home</a></li>
+                        <li><a href="venda.html">Venda</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav> <!-- menu-mobile -->
+
+            </div> <!-- flex-header -->
+        </div> <!-- center -->
+    </header>
+
+    <section class="banner">
+        <div class="center">
+            <div class="chamada">
+                <div class="chamada-red">Consultoria</div> <!-- chamada-red -->
+
+                <div class="chamada-red">Compra</div> <!-- chamada-red -->
+
+                <div class="chamada-red">Venda</div> <!-- chamada-red -->
+
+                <div class="chamada-white">e-mail@hotmail.com</div> <!-- chamada-white -->
+            </div><!-- chamada -->
+        </div><!-- center -->
+    </section> <!-- banner -->
+
+    <section class="veiculos-destaque">
+        <div class="center">
+
+            <div class="flex-titulo-destaque">
+                <div class="titulo">veículos em destaque</div>
+                <div class="linha"></div>
+            </div> <!-- flex-titulo-destaque -->
+
+            <div class="flex-veiculos-destaque">
+
+                <div class="conteudo">
+                    <div class="veiculo" style="background-image: url(../imagens/carro1.jpg);"></div> <!-- veiculo -->
+                    <div class="descricao">
+                        <h2>Volkswagen Karmann-ghia</h2>
+                        <p>1.6 6v, Gasolina, 2P, Manual1969</p>
+                        <a href="#">Mais Detalhes</a>
+                    </div> <!-- descricao -->
+                </div> <!-- conteudo -->
+
+                <div class="conteudo">
+                    <div class="veiculo" style="background-image: url(../imagens/carro2.jpg);"></div> <!-- veiculo -->
+                    <div class="descricao">
+                        <h2>Chevrolet Camaro SS</h2>
+                        <p>3.8 6v, Gasolina, 5P, Manual 1970</p>
+                        <a href="#">Mais Detalhes</a>
+                    </div> <!-- descricao -->
+                </div> <!-- conteudo -->
+
+                <div class="conteudo">
+                    <div class="veiculo" style="background-image: url(../imagens/carro3.jpg);"></div> <!-- veiculo -->
+                    <div class="descricao">
+                        <h2>Dodge Charger</h2>
+                        <p>2.7 6v, Gasolina, 2P, Manual 1970</p>
+                        <a href="#">Mais Detalhes</a>
+                    </div> <!-- descricao -->
+                </div> <!-- conteudo -->
+
+            </div> <!-- flex-veiculos-destaque -->
+
+        </div> <!-- center -->
+    </section><!-- veiculos-destaque  -->
+
+    <section class="servicos-depoimentos">
+        <div class="flex-servicos-depoimentos">
+            
+            <div class="servicos">
+                <div class="conteudo">
+                    <h2>Serviços</h2>
+                    <div class="lista"> 
+                        <nav>
+                            <ul>
+                                <li>Compra</li>
+                                <li>Venda</li>
+                                <li>Consultória de veículos</li>
+                                <li>Indicação de Mecânicos e peças</li>
+                            </ul>
+                        </nav>
+                    </div> <!-- lista -->
+                    <div class="saiba-mais"> <a href="#">Saiba mais</a></div><!-- saiba-mais -->
+                </div> <!-- conteudo -->
+            </div> <!-- servicos -->
+
+            <div class="depoimentos">
+                <div class="conteudo">
+                    <h2>Depoimentos</h2>
+                    <p>"O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive"</p>
+                    <div class="arrow">
+                        <div class="arrow1"><img src="../imagens/arrow-left.png" alt="arrow"></div>
+                        <div class="arrow2"><img src="../imagens/arrow-right.png" alt="arrow"></div>
+                    </div> <!-- arrow -->
+                    <div class="clear"></div> <!-- limpar flutuação -->
+                    <div class="nome">João da Silva</div> <!-- nome -->
+                </div><!-- conteudo -->
+            </div> <!-- depoimentos -->
+
+        </div> <!-- flex-servicos-depoimentos -->
+    </section> <!-- servicos-depoimentos -->
+
+    <section class="contato">
+        <div class="center">
+            <div class="flex-titulo-contato">
+                <div class="titulo">Contato</div>
+                <div class="linha"></div>
+            </div><!-- flex-titulo-contato -->
+            <div class="flex-form">
+                    <form class="formulario-contato">
+                        <div class="w100">
+                            <input type="text" name="nome" placeholder="Nome*" required>
+                        </div> <!-- w100 -->
+                        <div class="flex-w50">
+                            <div class="w50">
+                                <input type="email" name="email" placeholder="E-mail*" required>
+                            </div> <!-- w50 -->
+
+                            <div class="w50">
+                                <input type="text" name="telefone" placeholder="Telefone*" required>
+                            </div> <!-- w50 -->
+                        </div><!-- flex-w50 -->
+                        <textarea required placeholder="Mensagem*"></textarea>
+                        <div class="submit-center">
+                            <input type="submit">
+                        </div>
+                    </form> <!-- formulario-contato -->
+            </div> <!-- flex-form -->
+        </div><!-- center -->
+    </section> <!-- contato -->
+
+    <footer>
+        <div class="center">
+            <div class="flex-footer">
+                <nav class="menu-footer">
+                    <ul>
+                        <li><a style="color:#EB2D2D;" href="index.html">Home</a></li>
+                        <li><a href="venda.html">Venda</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav> <!-- menu-desktop -->
+
+                <p>Todos os direitos reservados</p>
+
+            </div><!-- flex-footer -->
+        </div> <!-- center -->
+    </footer>
+</body>
+</html>
