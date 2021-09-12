@@ -484,6 +484,16 @@ html,body{
     .flex-servicos-depoimentos .servicos .conteudo{
        padding-left: 20%;
     }
+
+    .formulario-contato .flex-w50{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formulario-contato .w50{
+        width: 100%;
+       
+    }
 }
 
 @media screen and (max-width:580px){
