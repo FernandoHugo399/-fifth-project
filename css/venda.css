@@ -96,6 +96,93 @@ header{
 /*********/
 
 
+/* venda */
+
+.venda{
+    padding-top: 60px;
+}
+
+.flex-venda-destaque{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+}
+.flex-venda-destaque .linha{
+    border-bottom: 2px solid black;
+    width: 100%;
+
+}
+.flex-venda-destaque .titulo{
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    width: 100px;
+}
+
+.filtro-preco{
+    max-width: 300px;
+}
+
+.filtro-preco h2{
+    font-weight: normal;
+}
+
+.bar{
+    width: 100%;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.bar .complete{
+    height: 100%;
+    width: 30%;
+    background-color: #ccc;
+    border-radius: 20px;
+}
+
+.bar .complete .box{
+    position: relative;
+    width: 26px;
+    height: 26px;
+    background-color: #ccc;
+    border: 1px solid black;
+    border-radius: 8px;
+    top: -3px;
+    left: 70%;
+}
+
+.preco{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.filtro-ano{
+    max-width: 300px;
+    padding-top: 10px;
+}
+
+.filtro-ano h2{
+    font-weight: normal;
+}
+
+.filtro-ano .radio{
+    padding-top: 5px;
+}
+
+
+/*********/
+
+
 /* footer */
 
 footer{
