@@ -98,21 +98,87 @@ header{
 
 /* veiculos */
 
-.flex-veiculo{
 
+.veiculo{
+    margin-top: 40px;
 }
 
-.flex-veiculo .w60{
-    width: 40%;
-    padding-top: 10%;
-    background-color: #EB2D2D;
+.veiculo .center{
+    max-width: 1000px;
+    
+}
+
+.flex-veiculo{
+    display: flex;
+}
+
+.flex-veiculo .imagem-veiculo{
+    width: 50%;
+    padding-top: 40%;
     background-image: url(../imagens/carro1.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
-.flex-veiculos .w40{
-    width: 40%;
+.flex-veiculo .descricao-veiculo{
+    width: 50%;
+    padding: 30px;
+}
+
+.flex-veiculo .descricao-veiculo h2{
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.flex-veiculo .descricao-veiculo a{
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: #EB2D2D;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 5px solid #a32323;
+    width: 150px;
+}
+
+.flex-veiculo .descricao-veiculo a:hover{
+    background-color: #d12a2a;
+    border-bottom: 5px solid #8b1e1e;
+}
+
+/*********/
+
+
+/* carrossel */
+
+.carrossel .center{
+    max-width: 1050px;
+}
+
+.carrossel .galeria1{
+    width: 100%;
+    max-width: 500px;
+    padding:15px;
+	overflow-x: scroll;
+	margin-top:15px;
+}
+
+.carrossel .galeria2{
+    width: 200%;
+}
+
+.galeria-item{
+    float: left;
+    padding-top:calc(33.3% * (100 / 200) * 0.6);
+	width:calc(33.3% * (100 / 200));
+    background-position: center;
+	background-size: cover;
+    border:7px solid white;
 }
 
 /*********/
