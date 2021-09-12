@@ -167,7 +167,7 @@ html,body{
 
 .veiculos-destaque .center{
     text-align: center;
-    max-width: 1368px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
@@ -285,6 +285,7 @@ html,body{
     display: inline-block;
     border-bottom: 5px solid #a32323;
     margin-top: 8px;
+    font-style: italic;
 }
 
 .flex-servicos-depoimentos .servicos .saiba-mais a:hover{
@@ -332,6 +333,101 @@ html,body{
 
 /*********/
 
+
+/* contato */
+
+.contato{
+    margin-top: 50px;
+}
+
+.flex-titulo-contato{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+}
+.flex-titulo-contato .linha{
+    border-bottom: 2px solid black;
+    width: 100%;
+
+}
+
+.flex-titulo-contato .titulo{
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    width: 140px;
+    text-align: center;
+}
+
+.flex-form{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-contato{
+    width: 600px;
+}
+
+.formulario-contato .flex-w50{
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario-contato .w50{
+    width: 48%;
+   
+}
+
+.formulario-contato input{
+    width: 100%;
+    padding: 8px;
+    margin-top: 20px;
+    outline: 0;
+    border: 1px solid #ccc;
+}
+
+.formulario-contato textarea{
+    width: 100%;
+    resize: none;
+    height: 123px;
+    margin-top: 20px;
+    outline: 0;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.formulario-contato input[type=submit]{
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    background-color: #EB2D2D;
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+    display: inline-block;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 5px solid #a32323;
+    width: 150px;
+}
+
+.formulario-contato input[type=submit]:hover{
+    background-color: #d12a2a;
+    border-bottom: 5px solid #8b1e1e;
+}
+
+.submit-center{
+    text-align: center;
+}
+
+/*********/
 
 /* media queries */
 
