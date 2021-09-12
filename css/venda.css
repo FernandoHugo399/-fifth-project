@@ -126,6 +126,18 @@ header{
     width: 100px;
 }
 
+.flex-venda{
+    display: flex;
+}
+
+.w30{
+    width: 30%;
+    padding-right: 1%;
+}
+.w70{
+    width: 70%;
+}
+
 .filtro-preco{
     max-width: 300px;
 }
@@ -155,8 +167,9 @@ header{
     background-color: #ccc;
     border: 1px solid black;
     border-radius: 8px;
+    left: 75%;
     top: -3px;
-    left: 70%;
+    cursor: pointer;
 }
 
 .preco{
@@ -182,6 +195,54 @@ header{
 .filtro-ano .radio label{
     cursor: pointer;
 }
+
+.flex-veiculos-destaque{
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-veiculos-destaque .conteudo{
+    width: 33.3%;
+    text-align: left;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.flex-veiculos-destaque .veiculo{
+    width: 100%;
+    padding-top: 66%;
+    background-color: #ccc;
+    border: 5px solid white;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+.flex-veiculos-destaque .descricao h2{
+    font-size: 19px;
+    padding-top: 3px;
+}
+
+.flex-veiculos-destaque .descricao p{
+    font-size: 14px;
+    color: #555;
+    padding-top: 5px;
+}
+
+.flex-veiculos-destaque .descricao a{
+    margin-top: 8px;
+    background-color: #EB2D2D;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    display: inline-block;
+    border-bottom: 5px solid #a32323;
+}
+
+.flex-veiculos-destaque .descricao a:hover{
+    background-color: #d12a2a;
+    border-bottom: 5px solid #8b1e1e;
+}
+
 
 /*********/
 
@@ -227,6 +288,12 @@ footer .center{
 
 /* media queries */
 
+@media screen and (max-width:1100px){
+    .flex-veiculos-destaque .conteudo{
+        width: 50%;
+    }
+}
+
 @media screen and (max-width:768px){
     .flex-header .menu-desktop{
         display: none;
@@ -244,6 +311,41 @@ footer .center{
 
     .flex-footer nav{
         display: none;
+    }
+
+    .flex-venda{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-venda .w30{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction:column; 
+
+        
+    }
+
+    .filtro-preco{
+        width: 90%;
+        max-width: none;
+    }
+
+    .filtro-preco .bar{
+       max-width: none;
+    }
+
+    .flex-veiculos-destaque .conteudo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .bar .complete .box{
+        position: absolute;
+        left: 30%;
+        margin-top: -3px;
+        top: auto;
     }
 }
 
