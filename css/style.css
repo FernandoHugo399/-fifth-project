@@ -429,6 +429,46 @@ html,body{
 
 /*********/
 
+
+/* footer */
+
+footer{
+    margin-top: 100px;
+    background-color: #252525;
+}
+
+footer .center{
+    max-width: 1400px;
+}
+
+.flex-footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.flex-footer .menu-footer ul li{
+    display: inline-block;
+    padding: 0 27px;
+}
+
+.flex-footer .menu-footer ul li a{
+    text-decoration: none;
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+
+}
+
+.flex-footer p{
+    font-style: italic;
+    color: white;
+    font-size: 20px;
+}
+
+/*********/
+
+
 /* media queries */
 
 @media screen and (max-width:768px){
@@ -493,6 +533,16 @@ html,body{
     .formulario-contato .w50{
         width: 100%;
        
+    }
+
+    .flex-footer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .flex-footer nav{
+        display: none;
     }
 }
 
