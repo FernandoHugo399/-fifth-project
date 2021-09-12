@@ -113,15 +113,15 @@ header{
 }
 
 .flex-veiculo .imagem-veiculo{
-    width: 50%;
-    padding-top: 40%;
+    width: 70%;
+    padding-top: 50%;
     background-image: url(../imagens/carro1.jpg);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 .flex-veiculo .descricao-veiculo{
-    width: 50%;
+    width: 30%;
     padding: 30px;
 }
 
@@ -151,6 +151,11 @@ header{
     border-bottom: 5px solid #8b1e1e;
 }
 
+.descricao-veiculo2{
+    display: none;
+}
+
+
 /*********/
 
 
@@ -162,10 +167,52 @@ header{
 
 .carrossel .galeria1{
     width: 100%;
-    max-width: 500px;
+    max-width: 650px;
     padding:15px;
-	overflow-x: scroll;
+	overflow: hidden;
 	margin-top:15px;
+
+    
+}
+
+.flex-galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow-left{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.arrow-right{
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.flex-titulo-veiculo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 60px;
+
+}
+.flex-titulo-veiculo .linha{
+    border-bottom: 2px solid black;
+    width: 100%;
+
+}
+
+.flex-titulo-veiculo .titulo{
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-style: italic;
+    background-color: white;
+    position: relative;
+    top: 20px;
+    width: 280px;
+    text-align: center;
 }
 
 .carrossel .galeria2{
@@ -415,6 +462,50 @@ footer .center{
         display: block;
     }
 
+    .descricao-veiculo{
+        display: none;
+    }
+
+    .flex-veiculo .imagem-veiculo{
+        width: 100%;
+        padding-top: 60%;
+        background-image: url(../imagens/carro1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .descricao-veiculo2{
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .descricao-veiculo2 h2{
+        padding-bottom: 20px;
+        font-weight: 500;
+    }
+    
+    .descricao-veiculo2 a{
+        margin-top: 20px;
+        font-size: 18px;
+        font-style: italic;
+        background-color: #EB2D2D;
+        color: white;
+        text-decoration: none;
+        padding: 8px;
+        display: inline-block;
+        border: 0;
+        cursor: pointer;
+        text-align: center;
+        border-bottom: 5px solid #a32323;
+        width: 150px;
+    }
+    
+    .flex-veiculo .descricao-veiculo2 a:hover{
+        background-color: #d12a2a;
+        border-bottom: 5px solid #8b1e1e;
+    }
 
     .flex-veiculos-destaque{
         flex-direction: column;
