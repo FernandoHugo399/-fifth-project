@@ -11,6 +11,8 @@
 
 ## :mag: About 
 Project made to practice responsive design
+<br>
+recreating the main page of a car sales website
 
 ## :rocket: Technologies used:
 <p align="center">
