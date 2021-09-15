@@ -10,7 +10,7 @@
  ---
 
 ## :mag: About 
-Project based on one of the practical projects of the danki code course
+Project made to practice responsive design
 
 ## :rocket: Technologies used:
 <p align="center">
