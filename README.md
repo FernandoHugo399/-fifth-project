@@ -1,4 +1,4 @@
-# Fifth project
+# Car sales website
 
 
 ![part1](https://user-images.githubusercontent.com/87580316/132983345-ff32a8af-e75c-4396-989e-b7cf6434a892.jpg)
@@ -10,7 +10,9 @@
  ---
 
 ## :mag: About 
-Project based on one of the practical projects of the danki code course
+Project made to practice responsive design
+<br>
+recreating the main page of a car sales website
 
 ## :rocket: Technologies used:
 <p align="center">
