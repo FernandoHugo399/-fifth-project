@@ -321,9 +321,14 @@ html,body{
     padding: 20px 0;
 }
 
-.arrow .arrow1{
+.arrow .arrow1 img{
     float: left;
-    padding: 0 30px;
+    margin: 0 30px;
+    cursor: pointer;
+}
+
+.arrow .arrow2 img{
+    cursor: pointer;
 }
 
 
