@@ -69,10 +69,7 @@ html,body{
     transition: 0.6s;
     height: 0;
     overflow: hidden;
-}
-
-.mobah{
-    height: 200px !important;
+    display: none;
 }
 
 .menu-mobile ul li{
@@ -88,6 +85,10 @@ html,body{
 
 .menu-mobile ul li a:hover{
     text-decoration: underline;
+}
+
+.mobah{
+    height: 200px !important;
 }
 
 /*********/
@@ -479,6 +480,10 @@ footer .center{
     }
 
     .flex-header .icon-menu-mobile{
+        display: block;
+    }
+
+    .menu-mobile{
         display: block;
     }
 
